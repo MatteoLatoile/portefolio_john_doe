@@ -1,0 +1,14 @@
+.card-skill-full{
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid gray;
+    display: flex;
+}
+.div-skill-right{
+    width: 50%;
+}
+.div-skill-right img{
+    width: 100%;
+    margin-bottom: 20px;
+}
