@@ -4,11 +4,24 @@
     margin: auto;
     border: 1px solid gray;
     display: flex;
+    margin-bottom: 30px;
 }
 .div-skill-right{
+    padding: 20px;
     width: 50%;
 }
 .div-skill-right img{
     width: 100%;
     margin-bottom: 20px;
+}
+h3{
+    font-family: "Nunito Sans", sans-serif; 
+    border-bottom: 3px solid #0d6efd;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.div-skill-left{
+    padding: 20px;
+    width: 50%;
 }

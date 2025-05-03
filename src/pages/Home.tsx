@@ -1,6 +1,7 @@
 import Herobg from '../assets/images/hero-bg.jpg';
 import Cardskills from '../composants/Cardskills/Cardskills';
 import Ensavoirplus from '../composants/Ensavoirplus';
+import Footer from '../composants/Footer/Footer';
 import '../css/home.css'
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
           <Ensavoirplus />
         </div>
         <Cardskills/>
+        <Footer />
       </div>
     </div>
   )
