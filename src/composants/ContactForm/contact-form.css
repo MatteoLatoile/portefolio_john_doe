@@ -12,11 +12,10 @@
   .contact-info {
     flex: 1;
     min-width: 300px;
-  }
-  
+  }  
   .contact-form h3,
   .contact-info h3 {
-    border-bottom: 3px solid #007bff;
+    border-bottom: 4px solid #007bff;
     padding-bottom: 10px;
     margin-bottom: 20px;
   }
