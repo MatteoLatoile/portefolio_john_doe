@@ -1,12 +1,16 @@
 import Banner from "../assets/images/banner.jpg"
 import Card from 'react-bootstrap/Card';
+import Brush from "../assets/images/icon/brush.svg"
+import Code from "../assets/images/icon/code-slash.svg"
+import Search from "../assets/images/icon/search.svg"
+import Footer from "../composants/Footer/Footer";
 
 const Services = () => {
   return (
     <div>
       <img style={{
         overflow:"hidden",
-        width:"100vw"
+        width:"100%"
       }} src={Banner} alt="" />
 
       <div style={{
@@ -27,51 +31,70 @@ const Services = () => {
         width:"100%",
        margin:"auto",
        display:"flex",
-       gap:"20px",
-       marginTop:"30px"
+       justifyContent:"space-evenly",
+       marginTop:"30px",
+       marginBottom:"30px"
       }}>
         <Card style={{width:"18rem"
          }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img style={{
+          width:"30%",
+          margin:"auto",
+          marginTop:"30px",
+          marginBottom:"30px"
+
+        }} variant="center" src={Brush}/>
         <Card.Body style={{
           textAlign:"center"
         }}>
-          <Card.Title>Card Title</Card.Title>
+          <Card.Title>UX Design</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          L’UX Design est une discipline qui consiste à concevoir des produits (sites web, applications mobiles, logiciels, objets connectés, etc.) en plaçant l’utilisateur au centre des préoccupations. L’objectif est de rendre l’expérience utilisateur la plus fluide et agréable possible.
           </Card.Text>
         </Card.Body>
             </Card>
 
             <Card style={{width:"18rem"
          }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img style={{
+
+            width:"30%",
+            margin:"auto",
+            marginTop:"30px",
+            marginBottom:"30px"
+
+        }} variant="center" src={Code} />
         <Card.Body style={{
           textAlign:"center"
         }}>
-          <Card.Title>Card Title</Card.Title>
+          <Card.Title>Développement web</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          Le développement de sites web consiste à créer des sites internet en utilisant des langages de programmation (HTML, CSS, JavaScript, PHP, etc.) et des frameworks (Bootstrap, React, Angular, etc.).
           </Card.Text>
         </Card.Body>
             </Card>
 
             <Card style={{width:"18rem"
          }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img style={
+          {
+            width:"30%",
+          margin:"auto",
+          marginTop:"30px",
+          marginBottom:"30px"
+          }
+        } variant="center" src={Search} />
         <Card.Body style={{
           textAlign:"center"
         }}>
-          <Card.Title>Card Title</Card.Title>
+          <Card.Title>Référencement</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          Le référencement naturel (SEO) est une technique qui consiste à optimiser un site web pour le faire remonter dans les résultats des moteurs de recherche (Google, Bing, Yahoo, etc.). L’objectif est d’attirer un maximum de visiteurs qualifiés sur le site.
           </Card.Text>
         </Card.Body>
             </Card>
       </div>
+      <Footer />
     </div>
   )
 }
