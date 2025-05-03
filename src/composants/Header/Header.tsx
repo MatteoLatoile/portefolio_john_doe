@@ -6,7 +6,7 @@ import {Routes, Route} from 'react-router-dom';
 import Services from "../../pages/Services";
 import Mention from "../../pages/Mention";
 import Portefolio from "../../pages/Portefolio";
-import Contact from "../../pages/contact";
+import Contact from "../../pages/Contact";
 import Home from "../../pages/Home";
 
 
