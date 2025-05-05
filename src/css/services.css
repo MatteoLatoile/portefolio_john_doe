@@ -1,0 +1,6 @@
+.cardHover:hover{
+    background-color: #efefee;
+    box-shadow: 9px 2px 20px 0 rgba(0, 0, 0, 0.138);
+    transition: 0.3s;
+}
+

@@ -1,11 +1,17 @@
-import { Accordion } from "react-bootstrap"
 import Footer from "../composants/Footer/Footer"
 import "../css/mention.css"
 import AccordionMention from "../composants/MentionAccordion/AccordionMention"
+import { Helmet } from 'react-helmet';
+
+
 
 const Mention = () => {
   return (
     <div>
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Mention</title>
+      </Helmet>
       <div style={{
         maxWidth:"500px",
         width:"100%",

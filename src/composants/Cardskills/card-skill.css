@@ -2,10 +2,18 @@
     max-width: 900px;
     width: 100%;
     margin: auto;
-    border: 1px solid gray;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
+    box-shadow: 9px 2px 44px 0 rgba(0, 0, 0, 0.36);
 }
+
+@media (max-width: 768px) {
+    .card-skill-full {
+      flex-direction: column;
+      padding: 10px;
+    }}
+
 .div-skill-right{
     padding: 20px;
     width: 50%;
