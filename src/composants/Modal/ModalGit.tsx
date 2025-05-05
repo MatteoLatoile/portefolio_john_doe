@@ -1,3 +1,4 @@
+import "./modal.css";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Cat from "./Desktop_John_Doe_Modale.png";
@@ -8,7 +9,8 @@ import Profil from "./icon/person-fill.svg";
 import Follower from "./icon/people.svg";
 import { useEffect, useState } from "react";
 
-const [toggle, setToggle] = useState(false)
+const ModalGit = () => {
+  const [toggle, setToggle] = useState(false)
 
   const [datas, setDatas] = useState({});
 
@@ -21,20 +23,9 @@ const [toggle, setToggle] = useState(false)
   useEffect(() => {
     getData();
   }, []);
-const Ensavoirplus = () => {
+
   return (
-
-<div>
-      <button style={{
-          backgroundColor:"#dc3545",
-          fontFamily:"Nunito Sans",
-          border:"none",
-          padding:"0.5em 1.5em",
-          color:"#fff",
-          borderRadius:"10px"
-      }}>En savoir plus</button>
-
-<div className="modal show" style={{ display: 'block', position: 'initial' }}>
+    <div className="modal show" style={{ display: 'block', position: 'initial' }}>
       <Modal.Dialog>
         <Modal.Header closeButton>
           <Modal.Title>Mon profil Github</Modal.Title>
@@ -98,10 +89,7 @@ const Ensavoirplus = () => {
         </Modal.Footer>
       </Modal.Dialog>
     </div>
-</div>
+  );
+};
 
-    
-  )
-}
-
-export default Ensavoirplus
+export default ModalGit;
